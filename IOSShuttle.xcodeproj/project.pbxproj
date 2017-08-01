@@ -9,17 +9,20 @@
 /* Begin PBXBuildFile section */
 		0188C0CF1F3020F8006962F8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0188C0CE1F3020F8006962F8 /* LoginViewController.swift */; };
 		0188C0D11F302279006962F8 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0188C0D01F302279006962F8 /* HomePageViewController.swift */; };
+		0188C0D31F302525006962F8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0188C0D21F302525006962F8 /* GoogleService-Info.plist */; };
 		0190D6E21F2F209100ACDC6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0190D6E11F2F209100ACDC6C /* AppDelegate.swift */; };
 		0190D6E41F2F209100ACDC6C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0190D6E31F2F209100ACDC6C /* ViewController.swift */; };
 		0190D6E71F2F209100ACDC6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0190D6E51F2F209100ACDC6C /* Main.storyboard */; };
 		0190D6EA1F2F209100ACDC6C /* IOSShuttle.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0190D6E81F2F209100ACDC6C /* IOSShuttle.xcdatamodeld */; };
 		0190D6EC1F2F209100ACDC6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0190D6EB1F2F209100ACDC6C /* Assets.xcassets */; };
 		0190D6EF1F2F209100ACDC6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0190D6ED1F2F209100ACDC6C /* LaunchScreen.storyboard */; };
+		8F5731F6EDD455A2A2339EC8 /* Pods_IOSShuttle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B304FCEA7DE2DF96C6152A3 /* Pods_IOSShuttle.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0188C0CE1F3020F8006962F8 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		0188C0D01F302279006962F8 /* HomePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		0188C0D21F302525006962F8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0190D6DE1F2F209100ACDC6C /* IOSShuttle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSShuttle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0190D6E11F2F209100ACDC6C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0190D6E31F2F209100ACDC6C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -28,6 +31,9 @@
 		0190D6EB1F2F209100ACDC6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0190D6EE1F2F209100ACDC6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0190D6F01F2F209100ACDC6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B304FCEA7DE2DF96C6152A3 /* Pods_IOSShuttle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IOSShuttle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		54145CFBCDCB32E1D8EBCD4D /* Pods-IOSShuttle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSShuttle.release.xcconfig"; path = "Pods/Target Support Files/Pods-IOSShuttle/Pods-IOSShuttle.release.xcconfig"; sourceTree = "<group>"; };
+		AB48E0BDF022889C17DE94EC /* Pods-IOSShuttle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSShuttle.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IOSShuttle/Pods-IOSShuttle.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F5731F6EDD455A2A2339EC8 /* Pods_IOSShuttle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +53,8 @@
 			children = (
 				0190D6E01F2F209100ACDC6C /* IOSShuttle */,
 				0190D6DF1F2F209100ACDC6C /* Products */,
+				A79BB16FA70AD0B10E9DAE74 /* Pods */,
+				1A190D315D679EE7A0E2A586 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +69,7 @@
 		0190D6E01F2F209100ACDC6C /* IOSShuttle */ = {
 			isa = PBXGroup;
 			children = (
+				0188C0D21F302525006962F8 /* GoogleService-Info.plist */,
 				0190D6E11F2F209100ACDC6C /* AppDelegate.swift */,
 				0190D6E31F2F209100ACDC6C /* ViewController.swift */,
 				0190D6E51F2F209100ACDC6C /* Main.storyboard */,
@@ -73,6 +83,23 @@
 			path = IOSShuttle;
 			sourceTree = "<group>";
 		};
+		1A190D315D679EE7A0E2A586 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3B304FCEA7DE2DF96C6152A3 /* Pods_IOSShuttle.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A79BB16FA70AD0B10E9DAE74 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AB48E0BDF022889C17DE94EC /* Pods-IOSShuttle.debug.xcconfig */,
+				54145CFBCDCB32E1D8EBCD4D /* Pods-IOSShuttle.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -80,9 +107,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0190D6F31F2F209100ACDC6C /* Build configuration list for PBXNativeTarget "IOSShuttle" */;
 			buildPhases = (
+				E16D3F66B28AEE6DBAC690CB /* [CP] Check Pods Manifest.lock */,
 				0190D6DA1F2F209100ACDC6C /* Sources */,
 				0190D6DB1F2F209100ACDC6C /* Frameworks */,
 				0190D6DC1F2F209100ACDC6C /* Resources */,
+				9509FE1EB70B8DE3E6E85A51 /* [CP] Embed Pods Frameworks */,
+				9C14B0949B9FF07931852E14 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -134,12 +164,61 @@
 			buildActionMask = 2147483647;
 			files = (
 				0190D6EF1F2F209100ACDC6C /* LaunchScreen.storyboard in Resources */,
+				0188C0D31F302525006962F8 /* GoogleService-Info.plist in Resources */,
 				0190D6EC1F2F209100ACDC6C /* Assets.xcassets in Resources */,
 				0190D6E71F2F209100ACDC6C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9509FE1EB70B8DE3E6E85A51 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IOSShuttle/Pods-IOSShuttle-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C14B0949B9FF07931852E14 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IOSShuttle/Pods-IOSShuttle-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E16D3F66B28AEE6DBAC690CB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0190D6DA1F2F209100ACDC6C /* Sources */ = {
@@ -271,6 +350,7 @@
 		};
 		0190D6F41F2F209100ACDC6C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB48E0BDF022889C17DE94EC /* Pods-IOSShuttle.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 62PYG5KRDL;
@@ -284,6 +364,7 @@
 		};
 		0190D6F51F2F209100ACDC6C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54145CFBCDCB32E1D8EBCD4D /* Pods-IOSShuttle.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 62PYG5KRDL;
