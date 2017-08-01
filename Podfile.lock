@@ -29,11 +29,22 @@ PODS:
     - GoogleToolboxForMac/NSString+URLArguments (= 2.1.1)
   - GoogleToolboxForMac/NSString+URLArguments (2.1.1)
   - GTMSessionFetcher/Core (1.1.8)
+  - LoopBack (1.3.0)
 
 DEPENDENCIES:
   - Firebase
   - Firebase/Auth
   - Firebase/Core
+  - LoopBack (from `https://github.com/strongloop/loopback-sdk-ios.git`)
+
+EXTERNAL SOURCES:
+  LoopBack:
+    :git: https://github.com/strongloop/loopback-sdk-ios.git
+
+CHECKOUT OPTIONS:
+  LoopBack:
+    :commit: e36a4ee47736ad94ceb5b0394dffc28189a1bce6
+    :git: https://github.com/strongloop/loopback-sdk-ios.git
 
 SPEC CHECKSUMS:
   Firebase: 5bc34d7b5ff5792e3386c8b28dc6265deeab0da4
@@ -43,7 +54,8 @@ SPEC CHECKSUMS:
   FirebaseInstanceID: 2d0518b1378fe9d685ef40cbdd63d2fdc1125339
   GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
   GTMSessionFetcher: 6f8d8b28b7e345549ac471071608170b31cb4977
+  LoopBack: 0ae752b0c1d3f572e1d949945a7651f61c433f9e
 
-PODFILE CHECKSUM: baec78ac114ba362ed657f7e670d29538c74e60f
+PODFILE CHECKSUM: d9383c7e54ca4906aa82f3d2664423b203e99ed5
 
 COCOAPODS: 1.2.1

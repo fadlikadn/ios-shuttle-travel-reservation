@@ -9,5 +9,6 @@ target 'IOSShuttle' do
   pod 'Firebase'
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
+  pod 'LoopBack', :git => 'https://github.com/strongloop/loopback-sdk-ios.git'
 
 end
