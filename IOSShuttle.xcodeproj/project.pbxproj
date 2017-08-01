@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0188C0CF1F3020F8006962F8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0188C0CE1F3020F8006962F8 /* LoginViewController.swift */; };
+		0188C0D11F302279006962F8 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0188C0D01F302279006962F8 /* HomePageViewController.swift */; };
 		0190D6E21F2F209100ACDC6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0190D6E11F2F209100ACDC6C /* AppDelegate.swift */; };
 		0190D6E41F2F209100ACDC6C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0190D6E31F2F209100ACDC6C /* ViewController.swift */; };
 		0190D6E71F2F209100ACDC6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0190D6E51F2F209100ACDC6C /* Main.storyboard */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0188C0CE1F3020F8006962F8 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		0188C0D01F302279006962F8 /* HomePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 		0190D6DE1F2F209100ACDC6C /* IOSShuttle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSShuttle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0190D6E11F2F209100ACDC6C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0190D6E31F2F209100ACDC6C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +67,8 @@
 				0190D6ED1F2F209100ACDC6C /* LaunchScreen.storyboard */,
 				0190D6F01F2F209100ACDC6C /* Info.plist */,
 				0190D6E81F2F209100ACDC6C /* IOSShuttle.xcdatamodeld */,
+				0188C0CE1F3020F8006962F8 /* LoginViewController.swift */,
+				0188C0D01F302279006962F8 /* HomePageViewController.swift */,
 			);
 			path = IOSShuttle;
 			sourceTree = "<group>";
@@ -140,8 +146,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0188C0CF1F3020F8006962F8 /* LoginViewController.swift in Sources */,
 				0190D6E41F2F209100ACDC6C /* ViewController.swift in Sources */,
 				0190D6EA1F2F209100ACDC6C /* IOSShuttle.xcdatamodeld in Sources */,
+				0188C0D11F302279006962F8 /* HomePageViewController.swift in Sources */,
 				0190D6E21F2F209100ACDC6C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -306,6 +314,7 @@
 				0190D6F51F2F209100ACDC6C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
