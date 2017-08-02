@@ -10,6 +10,7 @@ import UIKit
 import Firebase
 import FirebaseAuth
 import LoopBack
+import Alamofire
 
 class LoginViewController: UIViewController {
     
@@ -61,23 +62,87 @@ class LoginViewController: UIViewController {
         }
     }
     
-//    @IBAction func loginLoopbackAction(_ sender: AnyObject) {
-//        BackendUtilities.sharedInstance.clientRepo.userByLoginWithEmail(emailTextView.text, password: passwordTextView.text, success: { (client) -> Void in
-//            NSLog("Sucessfully logged in.")
-//            
-//            // Display login confirmation
-//            let alertController = UIAlertController(title: "Login", message: "Successfully logged in", preferredStyle: UIAlertControllerStyle.alert)
-//            alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.default, handler: nil))
-//            self.presentViewController(alertController, animated: true, completion: nil)
-//        }) { (error: NSError!) -> Void in
-//            NSLog("Error logging in.")
-//            
-//            // Display error alert
-//            let alertController = UIAlertController(title: "Login", message: "Login failed", preferredStyle: UIAlertControllerStyle.alert)
-//            alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.default, handler: nil))
-//            self.presentViewController(alertController, animated: true, completion: nil)
-//        }
-//    }
+    @IBAction func loginLoopbackAction(_ sender: AnyObject) {
+        if self.emailTextView.text == "" || self.passwordTextView.text == "" {
+            let alertController = UIAlertController(title: "Error", message: "Please enter an email and password.", preferredStyle: .alert)
+            
+            let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+            alertController.addAction(defaultAction)
+            
+            self.present(alertController, animated: true, completion: nil)
+        } else {
+//            BackendUtilities.sharedInstance.clientRepo.login(withEmail: emailTextView.text, password: passwordTextView.text, success: { (client) -> Void in
+//                NSLog("Sucessfully logged in.")
+//                
+//                // Display login confirmation
+//                let alertController = UIAlertController(title: "Login", message: "Successfully logged in", preferredStyle: UIAlertControllerStyle.alert)
+//                alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.default, handler: nil))
+//                self.present(alertController, animated: true, completion: nil)
+//            }, failure: { (error) -> Void in
+//                NSLog("Error logging in.")
+//                
+//                // Display error alert
+//                let alertController = UIAlertController(title: "Login", message: "Login failed", preferredStyle: UIAlertControllerStyle.alert)
+//                alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.default, handler: nil))
+//                self.present(alertController, animated: true, completion: nil)
+//            })
+            
+//            BackendUtilities.sharedInstance.clientRepo.userByLogin(withEmail: emailTextView.text, password: passwordTextView.text, success: { (client) -> Void in
+//                NSLog("Sucessfully logged in.")
+//                
+//                // Display login confirmation
+//                let alertController = UIAlertController(title: "Login", message: "Successfully logged in", preferredStyle: UIAlertControllerStyle.alert)
+//                alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.default, handler: nil))
+//                self.present(alertController, animated: true, completion: nil)
+//            }, failure: { (error) -> Void in
+//                NSLog("Error logging in.")
+//                
+//                // Display error alert
+//                let alertController = UIAlertController(title: "Login", message: "Login failed", preferredStyle: UIAlertControllerStyle.alert)
+//                alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.default, handler: nil))
+//                self.present(alertController, animated: true, completion: nil)
+//            })
+            
+            // Login using Alamofire
+            let parameters: Parameters = [
+//                "username": "admin",
+//                "password": "password"
+                "username": emailTextView.text ?? "",
+                "password": passwordTextView.text ?? ""
+            ]
+            
+            Alamofire.request("http://localhost:3000/api/users/login", method: .post, parameters: parameters, encoding: JSONEncoding.default)
+                .validate()
+                .responseJSON(){ response in
+                
+                    NSLog("Result: \(response.result.value)")
+                switch response.result {
+                case .success:
+                    NSLog("Sucessfully logged in.")
+                    print("You have successfully logged in")
+                    
+                    // Display login confirmation
+                    // let alertController = UIAlertController(title: "Login", message: "Successfully logged in", preferredStyle: UIAlertControllerStyle.alert)
+                    // alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.default, handler: nil))
+                    // sself.present(alertController, animated: true, completion: nil)
+                    
+                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "Home")
+                    self.present(vc!, animated: true, completion: nil)
+                case .failure(let error):
+                    print(error)
+                    NSLog("Error logging in.")
+                    
+                    // Display error alert
+                    let alertController = UIAlertController(title: "Login", message: "Login failed", preferredStyle: UIAlertControllerStyle.alert)
+                    alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.default, handler: nil))
+                    self.present(alertController, animated: true, completion: nil)
+                }
+                
+            }
+            
+        }
+
+    }
 
     /*
     // MARK: - Navigation

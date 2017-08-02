@@ -51,7 +51,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="loginAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AMJ-P9-wJ0"/>
+                                            <action selector="loginLoopbackAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DBt-9U-NnX"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -129,7 +129,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sxe-Bx-Xje" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1236" y="139"/>
+            <point key="canvasLocation" x="913" y="139"/>
         </scene>
     </scenes>
 </document>

@@ -10,17 +10,17 @@ import Foundation
 import UIKit
 import LoopBack
 
-//class BackendUtilities {
-//    let appDelegate = (UIApplication.sharedApplication().delegate as! AppDelegate!)
-//    let DEFAULTS_CURRENT_USER_ID_KEY: String = "LBUserRepositoryCurrentUserId"
-//    var adapter: LBRESTAdapter
-//    var clientRepo: ClientRepository
-//    
-//    static let sharedInstance = BackendUtilities()
+class BackendUtilities {
+    let appDelegate = (UIApplication.shared.delegate as! AppDelegate!)
+    let DEFAULTS_CURRENT_USER_ID_KEY: String = "LBUserRepositoryCurrentUserId"
+    var adapter: LBRESTAdapter
+    var clientRepo: ClientRepository
     
-//    init() {
-//        adapter = appDelegate.adapter as LBRESTAdapter!
-//        clientRepo = adapter.repositoryWithClass(ClientRepository) as! ClientRepository
-//    }
+    static let sharedInstance = BackendUtilities()
     
-//}
+    init() {
+        adapter = appDelegate?.adapter as LBRESTAdapter!
+        clientRepo = adapter.repository(with: ClientRepository.self) as! ClientRepository
+    }
+    
+}

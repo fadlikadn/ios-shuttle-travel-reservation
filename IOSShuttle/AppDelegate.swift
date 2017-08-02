@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     
-//    var adapter:LBRESTAdapter = LBRESTAdapter(URL: NSURL(string: "http://api.backend.com:3000/api/"))
+    var adapter:LBRESTAdapter = LBRESTAdapter(url: URL(string: "http://localhost:3000/explorer/"))
     // LBRESTAdapter give us the access to our LoopBack REST API
 
 
