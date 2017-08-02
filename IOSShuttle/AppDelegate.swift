@@ -9,11 +9,15 @@
 import UIKit
 import CoreData
 import Firebase
+import LoopBack
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+//    var adapter:LBRESTAdapter = LBRESTAdapter(URL: NSURL(string: "http://api.backend.com:3000/api/"))
+    // LBRESTAdapter give us the access to our LoopBack REST API
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {

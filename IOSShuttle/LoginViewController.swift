@@ -9,6 +9,7 @@
 import UIKit
 import Firebase
 import FirebaseAuth
+import LoopBack
 
 class LoginViewController: UIViewController {
     
@@ -56,8 +57,27 @@ class LoginViewController: UIViewController {
                 }
                 
             }
+            
         }
     }
+    
+//    @IBAction func loginLoopbackAction(_ sender: AnyObject) {
+//        BackendUtilities.sharedInstance.clientRepo.userByLoginWithEmail(emailTextView.text, password: passwordTextView.text, success: { (client) -> Void in
+//            NSLog("Sucessfully logged in.")
+//            
+//            // Display login confirmation
+//            let alertController = UIAlertController(title: "Login", message: "Successfully logged in", preferredStyle: UIAlertControllerStyle.alert)
+//            alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.default, handler: nil))
+//            self.presentViewController(alertController, animated: true, completion: nil)
+//        }) { (error: NSError!) -> Void in
+//            NSLog("Error logging in.")
+//            
+//            // Display error alert
+//            let alertController = UIAlertController(title: "Login", message: "Login failed", preferredStyle: UIAlertControllerStyle.alert)
+//            alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.default, handler: nil))
+//            self.presentViewController(alertController, animated: true, completion: nil)
+//        }
+//    }
 
     /*
     // MARK: - Navigation
